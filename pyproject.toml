@@ -1,0 +1,28 @@
+[project]
+name = "feature-store-healthcare"
+version = "1.0.0"
+description = "Healthcare feature store with point-in-time correct serving and HIPAA compliance"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Christopher Mangun", email = "cmangun@gmail.com" }]
+requires-python = ">=3.11"
+
+dependencies = [
+    "pydantic>=2.5.0",
+    "structlog>=24.1.0",
+    "redis>=5.0.0",
+    "sqlalchemy>=2.0.0",
+    "pyarrow>=14.0.0",
+    "feast>=0.36.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.2.0",
+]
+
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.build_meta"
