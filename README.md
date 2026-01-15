@@ -5,14 +5,14 @@
 
 **Production feature store for healthcare ML with point-in-time correct serving and HIPAA compliance.**
 
-## 🎯 Business Impact
+## Business Impact
 
 - **Point-in-time correctness** prevents data leakage in ML training
 - **PHI-aware access control** with role-based feature access
 - **Feature versioning** with full lineage
 - **Online/offline consistency** for training-serving parity
 
-## ✨ Key Features
+## Key Features
 
 - **Feature Registry**: Versioned feature definitions with lineage
 - **Point-in-Time Serving**: Correct historical feature values
@@ -20,7 +20,7 @@
 - **Access Control**: Role-based access with audit logging
 - **Healthcare Categories**: Clinical, lab, medication, vital signs
 
-## 🚀 Quick Start
+## Quick Start
 
 ```python
 from src.registry.feature_registry import FeatureRegistry, FeatureCategory
@@ -39,6 +39,6 @@ feature = registry.register_feature(
 )
 ```
 
-## 👤 Author
+## Author
 
 **Christopher Mangun** - [LinkedIn](https://linkedin.com/in/cmangun)
